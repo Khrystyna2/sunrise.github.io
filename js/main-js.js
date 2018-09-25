@@ -13,4 +13,9 @@ $(document).ready(function() {
      $self.val() == "" ? $self.prev().removeClass('active') : "";
    });
    
+
+   $('.btn-form').click(function() {
+      $('#step1').hide();
+      $('#step2').show();
+   });
 });

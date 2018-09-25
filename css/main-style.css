@@ -49,24 +49,22 @@ a:hover{
     color: inherit;
 }
 
-html{
-    height: 100%;
-}
 
 body {
-    background: linear-gradient( #FFE712, #FFED4F);
-    height: 100vh;
+    background: linear-gradient(to top, #FFE712, #FFED4F);
+    height: 100%;
     width: 100%;
     font-family: 'Graphik', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     color: #1B1919;
+    position: relative;
 }
 
 .background {
     background: url(../img/index/fon-top.png) no-repeat top center, url(../img/index/fon.svg) no-repeat bottom center;
     background-size: contain;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .top-info {
@@ -206,9 +204,10 @@ body {
     width: 610px;
     background-color: #fff;
     padding: 38px 40px 0;
-    margin-top: -125px;
+    margin-top: -130px;
     position: relative;
     z-index: 2;
+    min-height: 700px;
 }
 
 .content-form__title{
@@ -324,8 +323,7 @@ body {
 }
 
 .btn-form{
-    width: calc(100% + 80px);
-    margin-left: -40px;
+    width: 100%;
     height: 80px;
     background-color: #FF0008;
     border: none;
@@ -335,6 +333,136 @@ body {
     font-weight: 700;
     line-height: 30px;
     margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.btn-form:hover{
+    background-color: #A5110D;
+}
+
+.group-input{
+    justify-content: space-between;
+}
+
+.group-input .input-form{
+    width: 48%;
+}
+/*style for checkbox*/
+.label-checkbox {
+    display: block;
+    position: relative;
+    margin-right: 30px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.label-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 19px;
+    width: 19px;
+    border: 1.5px solid #9E9E9E;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.label-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.label-checkbox .checkmark:after {
+    left: 6px;
+    top: 1.5px;
+    width: 5px;
+    height: 10px;
+    border: solid #9E9E9E;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.checkbox p{
+    font-size: 16px;
+    line-height: 23px;
+    color: #9E9EAA;
+    padding-bottom: 15px;
+}
+
+.form-send{
+    font-size: 23px;
+    line-height: 31px;
+    text-align: center;
+}
+
+.form-send p{
+    padding-bottom: 12px;
+}
+.form-send a{
+    font-weight: 700;
+    color: blue;
+    padding-bottom: 12px;
+    display: inline-block;
+    font-size: 25px;
+}
+.form-send p small{
+    font-size: 20px;
+    line-height: 28px;
+    color: #9E9EAA;
+}
+
+
+#step1{
+    display: block;
+}
+
+#step2{
+    display: none;
+}
+
+#step3{
+    display: none;
+}
+
+.cars{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.call-box{
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.car-red,
+.car-black,
+.bus{
+    position: absolute;
+    bottom: 0;
+    left: -210px;
+    z-index: 1;
 }
 
 @media only screen and (min-width: 1600px) {

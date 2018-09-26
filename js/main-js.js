@@ -13,9 +13,13 @@ $(document).ready(function() {
      $self.val() == "" ? $self.prev().removeClass('active') : "";
    });
    
-
-   $('.btn-form').click(function() {
+   //form steps
+   $('#step1 .btn-form').click(function() {
       $('#step1').hide();
       $('#step2').show();
    });
+   $('#step2 .btn-form').click(function() {
+    $(' #step2').hide();
+    $('#step3').show();
+  });
 });

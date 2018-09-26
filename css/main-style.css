@@ -430,7 +430,6 @@ body {
     color: #9E9EAA;
 }
 
-
 #step1{
     display: block;
 }
@@ -464,6 +463,30 @@ body {
     left: -210px;
     z-index: 1;
 }
+
+.car-red{
+    animation: move 4s infinite;
+    -webkit-animation: move 4s infinite;
+}
+.car-black{
+    animation: move 5s infinite;
+    -webkit-animation: move 5s infinite;
+}
+.bus{
+    animation: move 7s infinite;
+    -webkit-animation: move 7s infinite;
+}
+body {
+    overflow-x: hidden;
+}
+@keyframes move {
+    from {
+        left: 0;
+      }
+      to { 
+        left: 1920px; 
+      }  
+    }
 
 @media only screen and (min-width: 1600px) {
     .container{

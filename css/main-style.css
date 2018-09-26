@@ -59,6 +59,7 @@ body {
     letter-spacing: 1px;
     color: #1B1919;
     position: relative;
+    overflow-x: hidden;
 }
 
 .background {
@@ -480,9 +481,7 @@ body {
     animation: move 7.4s infinite;
     -webkit-animation: move 7.4s infinite;
 }
-body {
-    overflow-x: hidden;
-}
+
 @keyframes move {
     from {
         left: -10%;
@@ -496,7 +495,7 @@ body {
         max-width: 1440px;
     }
 }
-@media only screen and (max-width: 1700px) {
+@media only screen and (max-width: 1700px)  and (min-width: 1300px){
     .container{
         max-width: 1240px;
     }
@@ -601,6 +600,265 @@ body {
     }
     .bus img {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1600px) and (max-height: 800px){
+    .logo {
+        width: 14%;
+        display: block;
+    }
+    .information {
+        margin-top: 25px;
+    }
+    .info-title h1 {
+        font-size: 27px;
+        line-height: 32px;
+    }
+    .info-title p {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 12px;
+    }
+    .info-address {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .info-phone a:first-of-type {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 4px;
+    }
+    .info-phone a:last-of-type {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .content-desc__title {
+        font-size: 26px;
+        line-height: 30px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        width: 85%;
+    }
+    .content-desc__list {
+        font-size: 21px;
+    }
+    .content-desc__list ul {
+        font-size: 15px;
+        line-height: 19px;
+        margin-top: 6px;
+        padding-left: 27px;
+    }
+    .content-form {
+        width: 100%;
+        padding-top: 20px;
+        min-height: 505px;
+        margin-top: -80px;
+    }
+    .content-form__title {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+    .input-form {
+        margin-bottom: 20px;
+    }
+    .btn-form {
+        height: 70px;
+    }
+    .bus{
+        width: 160px;
+    }
+    .bus img {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .background {
+        height: auto;
+    }
+
+    .top-info {
+        margin-top: 25px;
+    }
+
+    .information {
+        margin-top: 44px;
+    }
+
+    .logo {
+        width: 15%;
+        display: block;
+    }
+
+    .info-title h1 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .info-title p {
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 18px;
+    }
+
+    .info-img {
+        width: 55%;
+    }
+
+    .info-address {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .info-phone a:first-of-type {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 4px;
+    }
+
+    .info-phone a:last-of-type {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .content {
+        margin-bottom: 150px;
+    }
+
+    .content-desc {
+        width: 47%;
+    }
+
+    .content-desc__title {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .content-desc__list {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .content-desc__list ul {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 5px;
+        padding-left: 25px;
+    }
+
+    .wrap-form{
+        width: 50%;
+    }
+
+    .content-form {
+        width: 100%;
+        padding: 22px 25px 0;
+        margin-top: -40px;
+        min-height: 600px;
+    }
+
+    .content-form__title {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 24px;
+    }
+
+    .input-form {
+        margin-bottom: 20px;
+    }
+
+    .checkbox p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .btn-form {
+        height: 65px;
+        font-size: 18px;
+    }
+
+    .form-send {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .form-send p small {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .girl{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .logo {
+        width: 20%;
+        display: block;
+    }
+
+    .info-title {
+        width: 60%;
+    }
+
+    .info-title h1 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .info-img {
+        width: 55%;
+        MARGIN-TOP: 15px;
+    }
+   
+    .info-title p {
+        display: none;
+    }
+
+    .info-address{
+        display: none;
+    }
+
+    .info-phone {
+        width: 37%;
+    }
+
+    .content-desc__title {
+        font-size: 20px;
+        line-height: 22px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .content-desc__list {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .content-desc__list ul {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 5px;
+        padding-left: 18px;
+    }
+
+    .content-desc__list ul li::before {
+        content: '—';
+        position: absolute;
+        left: -16px;
+        font-size: 10px;
+    }
+
+    .content-form__title {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 24px;
     }
 }
 @media only screen and (max-width: 2560px) and (min-height: 1440px){

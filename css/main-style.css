@@ -49,6 +49,10 @@ a:hover{
     color: inherit;
 }
 
+html {
+    width: 100%;
+}
+
 
 body {
     background: linear-gradient(to top, #FFE712, #FFED4F);
@@ -162,6 +166,18 @@ body {
     line-height: 50px;
     font-weight: 700;
     margin-bottom: 15px;
+    position: relative;
+}
+
+.hat {
+    position: absolute;
+    top: -27px;
+    left: -20px;
+    width: 44px;
+}
+
+.hat img {
+    width: 100%;
 }
 
 .content-desc__list{
@@ -206,16 +222,16 @@ body {
     width: 610px;
     background-color: #fff;
     padding: 38px 40px 0;
-    margin-top: -130px;
+    margin-top: -140px;
     position: relative;
     z-index: 2;
-    min-height: 700px;
+    height: 710px;
 }
 
 .content-form__title{
     font-size: 32px;
     font-weight: 700;
-    line-height: 45px;
+    line-height: 40px;
     text-align: center;
     width: 82%;
     margin: 0 auto;
@@ -228,14 +244,15 @@ body {
     flex-direction: column;
     position: relative;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .input-form label{
     position: absolute;
     pointer-events: none;
     top: 50%;
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 17px;
     font-weight: 400;
     color: #9E9EAA;
     transition: ease-out 0.2s;
@@ -312,7 +329,7 @@ body {
     height: inherit;
     border: none;
     color: #9E9EAA;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     box-shadow: none;
     background-color: transparent;
@@ -470,16 +487,16 @@ body {
 }
 
 .car-red{
-    animation: move 5s infinite;
-    -webkit-animation: move 5s infinite;
+    animation: move 7s infinite;
+    -webkit-animation: move 7s infinite;
 }
 .car-black{
-    animation: move 6s infinite;
-    -webkit-animation: move 6s infinite;
+    animation: move 9s infinite;
+    -webkit-animation: move 9s infinite;
 }
 .bus{
-    animation: move 7.4s infinite;
-    -webkit-animation: move 7.4s infinite;
+    animation: move 11.4s infinite;
+    -webkit-animation: move 11.4s infinite;
 }
 
 @keyframes move {
@@ -487,7 +504,7 @@ body {
         left: -10%;
       }
       to { 
-        left: 110%; 
+        left: 130%; 
       }  
     }
 @media only screen and (min-width: 1700px) {
@@ -495,7 +512,7 @@ body {
         max-width: 1440px;
     }
 }
-@media only screen and (max-width: 1700px)  and (min-width: 1300px){
+@media only screen and (max-width: 1700px) and (min-width: 1300px){
     .container{
         max-width: 1240px;
     }
@@ -564,7 +581,7 @@ body {
     .content-form {
         width: 100%;
         padding-top: 20px;
-        min-height: 600px;
+        height: 600px;
         margin-top: -95px;
     }
 
@@ -603,7 +620,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 1600px) and (max-height: 800px){
+@media only screen and (max-width: 1600px) and (max-height: 750px){
     .logo {
         width: 14%;
         display: block;
@@ -653,7 +670,7 @@ body {
     .content-form {
         width: 100%;
         padding-top: 20px;
-        min-height: 505px;
+        height: 600px;
         margin-top: -80px;
     }
     .content-form__title {
@@ -673,10 +690,94 @@ body {
     .bus img {
         width: 100%;
     }
+
 }
+@media only screen and (max-width: 1550px) {
+    .logo {
+        width: 14%;
+        display: block;
+    }
+    .information {
+        margin-top: 25px;
+    }
+    .info-title h1 {
+        font-size: 27px;
+        line-height: 32px;
+    }
+    .info-title p {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 12px;
+    }
+    .info-address {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .info-phone a:first-of-type {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 4px;
+    }
+    .info-phone a:last-of-type {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .content-desc__title {
+        font-size: 26px;
+        line-height: 30px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        width: 85%;
+    }
+    .content-desc__list {
+        font-size: 21px;
+    }
+    .content-desc__list ul {
+        font-size: 15px;
+        line-height: 19px;
+        margin-top: 6px;
+        padding-left: 27px;
+    }
+    .content-form {
+        width: 100%;
+        padding-top: 20px;
+        height: 500px;
+        margin-top: -95px;
+    }
+    .content-form__title {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .input-form {
+        margin-bottom: 15px;
+    }
+    .select-style {
+        margin-bottom: 15px;
+    }
+    .btn-form {
+        height: 60px;
+    }
+
+    .girl {
+
+        bottom: 100px;
+    }
+
+    .bus{
+        width: 150px;
+    }
+    .bus img {
+        width: 100%;
+    }
+
+}
+
 @media only screen and (max-width: 1300px) {
+
     .background {
-        height: auto;
+        min-height: 100vh;
     }
 
     .top-info {
@@ -758,7 +859,7 @@ body {
         width: 100%;
         padding: 22px 25px 0;
         margin-top: -40px;
-        min-height: 600px;
+        height: 600px;
     }
 
     .content-form__title {
@@ -797,7 +898,7 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
-
+   
     .logo {
         width: 20%;
         display: block;
@@ -829,6 +930,10 @@ body {
         width: 37%;
     }
 
+    .content-desc {
+        width: 37%;
+    }
+
     .content-desc__title {
         font-size: 20px;
         line-height: 22px;
@@ -852,15 +957,252 @@ body {
         content: '—';
         position: absolute;
         left: -16px;
-        font-size: 10px;
+        font-size: 11px;
+    }
+
+    .wrap-form {
+        width: 56%;
     }
 
     .content-form__title {
         font-size: 16px;
         line-height: 22px;
-        margin-bottom: 24px;
+        margin-bottom: 10px;
     }
+
+    .content-form {
+        width: 100%;
+        padding: 22px 25px 0;
+        margin-top: -10px;
+        height: 600px;
+    }
+
+    .input-form input {
+        font-size: 14px;
+    }
+
+    .input-form label {
+        font-size: 14px;
+    }
+    .select-style > select {
+        font-size: 14px;
+    }
+
+    .input-form label span {
+        display: none;
+    }
+
 }
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .info-title h1 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .information {
+        margin-top: 25px;
+    }
+
+    .info-phone a:first-of-type {
+        font-size: 15px;
+        line-height: 16px;
+        margin-bottom: 0;
+    }
+
+    .info-phone a:last-of-type {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .content-desc__title {
+        font-size: 18px;
+        line-height: 22px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .content-form__title {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .input-form {
+        margin-bottom: 15px;
+    }
+
+    .content-form {
+        width: 100%;
+        padding: 22px 25px 0;
+        margin-top: -10px;
+        height: 560px;
+    }
+
+    .input-form label span {
+        display: none;
+    }
+
+    .call-box {
+        height: 150px;
+    }
+    .call-box img {
+        height: 100%;
+    }
+
+    .car-red {
+        width: 95px;
+    }
+
+    .car-red img {
+        width: 100%;
+    }
+
+    .car-black {
+        width: 95px;
+    }
+
+    .car-black img {
+        width: 100%;
+    }
+
+    .bus {
+        width: 120px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .top-info {
+        margin-top: 10px;
+    }
+
+    .information {
+        justify-content: flex-end;
+    }
+
+    .info-title {
+        display: none;
+    }
+
+    .info-phone {
+        width: 85%;
+    }
+
+    .info-phone a:first-of-type {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 0;
+    }
+
+    .info-phone a:last-of-type {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .content {
+        margin-bottom: 150px;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .content-desc {
+        width: 75%;
+        margin-bottom: 25px;
+        margin-top: 5px;
+    }
+
+    .content-desc__title {
+        font-size: 22px;
+        line-height: 26px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .wrap-form {
+        width: 75%;
+    }
+
+    .content-form {
+        width: 100%;
+        padding: 22px 25px 0;
+        margin-top: 0;
+        height: 520px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .top-info {
+        margin-top: 10px;
+    }
+
+    .logo {
+        width: 85px;
+        display: block;
+    }
+
+    .information {
+        justify-content: flex-end;
+        margin-top: 16px;
+    }
+
+    .info-title {
+        display: none;
+    }
+
+    .info-phone {
+        width: 85%;
+    }
+
+    .info-phone a:first-of-type {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 0;
+    }
+
+    .info-phone a:last-of-type {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .content {
+        margin-bottom: 150px;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .content-desc {
+        width: 100%;
+        margin-bottom: 25px;
+        margin-top: 5px;
+    }
+
+    .content-desc__title {
+        font-size: 22px;
+        line-height: 26px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .wrap-form {
+        width: 100%;
+    }
+
+    .content-form {
+        width: 100%;
+        padding: 22px 25px 0;
+        margin-top: 0;
+        height: 520px;
+    }
+
+}
+
 @media only screen and (max-width: 2560px) and (min-height: 1440px){
         .container{
             max-width: 1600px;

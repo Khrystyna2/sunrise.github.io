@@ -27,4 +27,8 @@ $(document).ready(function() {
     $('.content-desc__list ul li').slideToggle();
     $('.arrow-down').toggleClass('active');
   });
+
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  });
 });

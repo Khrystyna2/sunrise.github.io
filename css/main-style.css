@@ -259,7 +259,7 @@ body {
     border-bottom: 1px solid #9E9E9E;
     font-size: 16px;
     font-weight: 400;
-    color: #D1D1D9;
+    color: #9E9EAA;
     background: transparent;
     border-radius: 0;
     -webkit-border-radius: 0;
@@ -587,6 +587,30 @@ body {
 
 .modal-girl img {
     width: 100%;
+}
+
+.select-style input{
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid #9E9E9E;
+    font-size: 16px;
+    font-weight: 400;
+    color: #9E9EAA;
+    background: transparent;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    cursor: pointer;
+}
+
+#datepicker {
+    width: 100%;
+}
+
+.select-style input[type="text"]::placeholder {
+    color: #9E9EAA;
 }
 
 
@@ -1229,8 +1253,11 @@ body {
         justify-content: flex-end;
     }
 
-    .info-title {
+    .info-title h1{
         display: none;
+    }
+    .info-img {
+        width: 100%;
     }
 
     .info-phone {
@@ -1252,6 +1279,7 @@ body {
         margin-bottom: 150px;
         flex-flow: column;
         align-items: center;
+        margin-top: 20px;
     }
 
     .content-desc {
@@ -1302,21 +1330,31 @@ body {
     }
 
     .logo {
-        width: 85px;
+        width: 110px;
         display: block;
     }
 
     .information {
         justify-content: flex-end;
+        align-items: flex-end;
         margin-top: 16px;
+        flex-flow: column;
     }
 
     .info-title {
-        display: none;
+        display: flex;
+        justify-content: flex-end;
+        order: 2;
+        width: 85%;
+    }
+
+    .info-img {
+        width: 145px;
     }
 
     .info-phone {
         width: 85%;
+        order: 1;
     }
 
     .info-phone a:first-of-type {
@@ -1334,6 +1372,7 @@ body {
         margin-bottom: 120px;
         flex-flow: column;
         align-items: center;
+        margin-top: 5px;
     }
 
     .content-desc {

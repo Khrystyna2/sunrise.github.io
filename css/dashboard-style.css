@@ -66,8 +66,10 @@ body {
 .wrap-setup {
     width: 200px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.icon-box
+.icon-box {
+    
+}

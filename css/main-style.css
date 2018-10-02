@@ -499,6 +499,109 @@ body {
     -webkit-animation: move 11.4s infinite;
 }
 
+.arrow-down {
+    display: none;
+}
+
+/* modal window */
+.modal-content {
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.modal-header {
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-align: start;
+   align-items: flex-start;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+   padding: 35px 0;
+   border-bottom: none;
+   border-radius: 0;
+   -webkit-border-radius: 0;
+   -moz-border-radius: 0;
+   -ms-border-radius: 0;
+   -o-border-radius: 0;
+}
+
+.modal-header .close {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    right: 20px;
+    top: 20px;
+}
+
+.modal-title {
+    text-align: center;
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.modal-body {
+    padding: 0 40px;
+}
+
+.modal-body .checkbox p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #9E9EAA;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.modal-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 20px 40px 50px 40px;
+    border-top: none;
+}
+
+.btn-red {
+    width: 100%;
+    height: 70px;
+    background-color: #FF0008;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.btn-red:hover {
+    background-color: #A5110D;
+}
+
+.modal-girl {
+    width: 125px;
+    position: absolute;
+    top: 0;
+    right: -70px;
+}
+
+.modal-girl img {
+    width: 100%;
+}
+
 @keyframes move {
     from {
         left: -10%;
@@ -691,6 +794,12 @@ body {
         width: 100%;
     }
 
+    .hat {
+        position: absolute;
+        top: -20px;
+        left: -12px;
+        width: 30px;
+    }
 }
 @media only screen and (max-width: 1550px) {
     .logo {
@@ -895,6 +1004,13 @@ body {
     .girl{
         display: none;
     }
+
+    .hat {
+        position: absolute;
+        top: -18px;
+        left: -12px;
+        width: 28px;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -988,8 +1104,15 @@ body {
         font-size: 14px;
     }
 
-    .input-form label span {
+    .input-form label span:last-of-type {
         display: none;
+    }
+
+    .hat {
+        position: absolute;
+        top: -16px;
+        left: -10px;
+        width: 23px;
     }
 
 }
@@ -1075,6 +1198,20 @@ body {
         width: 120px;
     }
 
+    .hat {
+        position: absolute;
+        top: -15px;
+        left: -10px;
+        width: 23px;
+    }
+
+    .modal-girl {
+        width: 75px;
+        position: absolute;
+        top: 0;
+        right: -45px;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -1114,7 +1251,7 @@ body {
     .content-desc {
         width: 75%;
         margin-bottom: 25px;
-        margin-top: 5px;
+        margin-top: 12px;
     }
 
     .content-desc__title {
@@ -1122,6 +1259,18 @@ body {
         line-height: 26px;
         width: 100%;
         margin-bottom: 10px;
+    }
+
+    .content-desc__list {
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    .content-desc__list ul {
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 5px;
+        padding-left: 18px;
     }
 
     .wrap-form {
@@ -1133,6 +1282,10 @@ body {
         padding: 22px 25px 0;
         margin-top: 0;
         height: 520px;
+    }
+
+    .modal-girl {
+       display: none;
     }
 
 }
@@ -1180,7 +1333,8 @@ body {
     .content-desc {
         width: 100%;
         margin-bottom: 25px;
-        margin-top: 5px;
+        margin-top: 12px;
+        padding-bottom: 25px;
     }
 
     .content-desc__title {
@@ -1201,6 +1355,86 @@ body {
         height: 520px;
     }
 
+    .content-desc__list ul li{
+        display: none;
+    }
+
+    .arrow-down {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FF0008;
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+        position: absolute;
+        right: 35px;
+        border: 0;
+        cursor: pointer;
+        transition: 0.4s    ;
+        -webkit-transition: 0.4s    ;
+        -moz-transition: 0.4s    ;
+        -ms-transition: 0.4s    ;
+        -o-transition: 0.4s    ;
+}
+
+    .arrow-down.active img {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg)    ;
+        -moz-transform: rotate(180deg)    ;
+        -ms-transform: rotate(180deg)    ;
+        -o-transform: rotate(180deg)    ;
+}
+
+    .input-form label.active{
+        transform: translateY(-170%);
+        -webkit-transform: translateY(-170%);
+        -moz-transform: translateY(-170%);
+        -ms-transform: translateY(-170%);
+        -o-transform: translateY(-170%);
+        font-size: 10px;
+    }
+
+    .form-send a {
+        font-weight: 700;
+        color: blue;
+        padding-bottom: 12px;
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .form-send p {
+        padding-bottom: 10px;
+    }
+
+    .form-send {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .info-phone {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    .modal-title {
+        font-size: 24px;
+    }
+
+    .modal-body {
+        padding: 0 20px;
+    }
+
+    .modal-body .checkbox p {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 2560px) and (min-height: 1440px){

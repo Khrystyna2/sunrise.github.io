@@ -7,7 +7,7 @@ body {
 .left-menu {
     background: #FFE712;
     width: 100%;
-    min-height: 100vh;
+    height: auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -76,7 +76,8 @@ body {
     justify-content: flex-start;
     align-items: center;
     font-size: 16px;
-    line-height: 18px
+    line-height: 18px;
+    position: relative;
 }
 
 .icon-box {
@@ -101,6 +102,7 @@ body {
     margin: 40px 0;
     margin-right: 22px;
     width: 44px;
+    cursor: pointer;
 }
 
 .icon-sort img {
@@ -119,11 +121,163 @@ body {
     content: '';
     position: absolute;
     bottom: 0;
-    left: -30px;
-    width: calc(100% + 45px);
+    left: -15px;
+    width: calc(100% + 30px);
     height: 5px;
     box-shadow: 0px 4px rgba(197, 197, 197, 0.25)
     
+}
+
+.show-printer {
+    position: absolute;
+    left: 0;
+    width: 500px;
+    top: 100%;
+    z-index: 1;
+    padding: 30px 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgba(176, 176, 176, 0.25);
+    display: none;
+}
+
+.printer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.printer .button-main {
+    width: 100%;
+}
+
+.btn-printer {
+    border: none;
+    background-color: #FF0008;
+    width: 195px;
+    height: 43px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/*style for checkbox*/
+.printer .label-checkbox {
+    min-width: 50px;
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 18px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.printer .label-checkbox:nth-of-type(2),
+.printer .label-checkbox:nth-of-type(5) {
+    min-width: 150px;
+}
+
+.printer .label-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.printer .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border: 1.4px solid #9E9E9E;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+}
+
+.printer .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 50%;
+    margin-left: -3px;
+    top: 50%;
+    margin-top: -5.5px;
+    width: 5px;
+    height: 9px;
+    border: solid #9E9E9E;
+    border-width: 0 1.5px 1.5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.printer .label-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.sort-box {
+    position: absolute;
+    right: 0;
+    width: 250px;
+    top: 100%;
+    z-index: 1;
+    padding: 30px 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgba(176, 176, 176, 0.25);
+    display: none;
+}
+
+/*style for checkbox*/
+.sort-box .label-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 18px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sort-box .label-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.sort-box .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 1.4px solid #9E9E9E;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.sort-box .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    border: none;
+}
+.sort-box .label-checkbox input:checked ~ .checkmark {
+    background-color: #FFE819;
+    border: none;
 }
 
 .wrapper-table {
@@ -378,7 +532,7 @@ table tr:hover {
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.5px) {
 
     .box-logo {
         display: flex;
@@ -404,7 +558,6 @@ table tr:hover {
     }
 
     .left-menu {
-        min-height: auto;
         position: relative;
         width: calc(100% + 30px);
         margin-left: -15px;
@@ -424,11 +577,41 @@ table tr:hover {
 
     .menu {
         display: none;
+        position: absolute;
+        z-index: 1;
+        top: 225px;
     }
 
     .icon-sort {
         margin-right: 0;
     }
+
+    .wrapper-table {
+        padding-top: 40px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .menu li a {
+        font-size: 18px;
+        line-height: 60px;
+        height: 60px;
+    }
+
+    .table-name {
+        min-width: 125px;
+    }
+
+    .table-phone {
+        min-width: 225px;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px) {
 
     .icon-box {
         margin-right: 0;
@@ -442,17 +625,9 @@ table tr:hover {
         justify-content: center;
     }
 
-    .wrapper-table {
-        padding-top: 40px;
+    .wrap-setup__sort {
+        justify-content: center;
     }
-
-    table {
-        width: 100%;
-    }
-}
-
-
-@media only screen and (max-width: 500px) {
 
     .wrap-setup span {
         display: none;

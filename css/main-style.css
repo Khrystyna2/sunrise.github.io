@@ -508,7 +508,7 @@ body {
    align-items: flex-start;
    -ms-flex-pack: justify;
    justify-content: space-between;
-   padding: 35px 0;
+   padding: 35px;
    border-bottom: none;
    border-radius: 0;
    -webkit-border-radius: 0;

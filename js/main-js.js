@@ -35,4 +35,23 @@ $(document).ready(function() {
   $('.btn-menu').click(function() {
     $('.menu').slideToggle();
   });
+
+
+  $('div.icon-box').click(function() {
+		let findArticle = $(this).next().next('.show-printer');
+		
+		if( findArticle.is(':visible')){
+			findArticle.slideUp(400);
+		}
+		else{
+			$('.show-printer').slideUp();
+			findArticle.slideDown();
+		}
+  });
+  
+  $('.icon-sort').click(function() {
+    $('.sort-box').slideToggle();
+  });
+
+
 });

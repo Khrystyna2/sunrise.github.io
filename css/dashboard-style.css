@@ -3,6 +3,10 @@ body {
     width: 100%;
 }
 
+.container-fluid {
+    padding-left: 0px;
+}
+
 .left-menu {
     background: #FFE712;
     width: 100%;
@@ -64,12 +68,70 @@ body {
     color: #fff;
 }
 .wrap-setup {
-    width: 200px;
-    display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-size: 16px;
+    line-height: 18px
 }
 
 .icon-box {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-color: #E8E8E8;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.icon-sort {
+    margin: 40px 0;
+    margin-right: 20px;
+}
+
+.wrap-setup__sort {
+    justify-content: flex-end;
+}
+
+.box-shadow__top {
+    position: relative;
+}
+
+.box-shadow__top::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+    width: calc(100% + 45px);
+    height: 5px;
+    box-shadow: 0px 4px rgba(197, 197, 197, 0.25)
+    
+}
+
+.wrapper-table {
+    padding-top: 58px;
+}
+
+table {
+    width: 100%;
+}
+
+table td,
+table th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 22px;
+    padding-left: 24px;
+}
+
+.table-number {
     
 }

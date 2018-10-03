@@ -1377,9 +1377,8 @@ body {
 
     .content-desc {
         width: 100%;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         margin-top: 12px;
-        padding-bottom: 25px;
     }
 
     .content-desc__title {
@@ -1423,7 +1422,7 @@ body {
         -o-border-radius: 2px;
         position: absolute;
         right: 35px;
-        border: 0;
+        top: 52px;
         cursor: pointer;
         transition: 0.4s;
         -webkit-transition: 0.4s;

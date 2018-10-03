@@ -31,4 +31,8 @@ $(document).ready(function() {
   $( function() {
     $( "#datepicker" ).datepicker();
   });
+
+  $('.btn-menu').click(function() {
+    $('.menu').slideToggle();
+  });
 });

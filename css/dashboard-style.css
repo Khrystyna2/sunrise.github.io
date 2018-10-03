@@ -1,16 +1,16 @@
 body {
     background: #fff;
     width: 100%;
-}
-
-.container-fluid {
-    padding-left: 0px;
+    position: relative;
 }
 
 .left-menu {
     background: #FFE712;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .box-logo {
@@ -67,6 +67,11 @@ body {
     background-color: #FF0008;
     color: #fff;
 }
+
+.btn-menu {
+    display: none;
+}
+
 .wrap-setup {
     justify-content: flex-start;
     align-items: center;
@@ -94,7 +99,12 @@ body {
 
 .icon-sort {
     margin: 40px 0;
-    margin-right: 20px;
+    margin-right: 22px;
+    width: 44px;
+}
+
+.icon-sort img {
+    width: 100%;
 }
 
 .wrap-setup__sort {
@@ -121,7 +131,9 @@ body {
 }
 
 table {
-    width: 100%;
+    width: 98.5%;
+    margin-right: 15px;
+    border-collapse: collapse;
 }
 
 table td,
@@ -130,8 +142,327 @@ table th{
     text-align: left;
     padding: 22px;
     padding-left: 24px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+table th {
+    background-color: #F4F4F4;
+    font-weight: 700;
+}
+
+
+table tr{
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+table tr:hover {
+    background-color: #FFE8E8;
+    /* border: 1px solid #FF0008; */
 }
 
 .table-number {
+    min-width: 3.43vw;
+}
+
+.table-name {
+    min-width: 8.59vw;
+}
+
+.table-nameLat {
+    min-width: 12.60vw;
+}
+
+.table-date {
+    min-width: 9.89vw;
+}
+
+.table-age {
+    min-width: 4.37vw;
+}
+
+.table-address {
+    min-width: 11.71vw;
+}
+
+.table-school {
+    min-width: 10.93vw;
+}
+
+.table-phone {
+    min-width: 16.35vw;
+}
+
+.table-phone p span {
+    font-weight: 700;
+}
+
+.btn-table {
+    background-color: #fff;
+    box-shadow: 0px 0 2px 2px rgba(176, 176, 176, 0.25);
+    width: 100%;
+    height: 40px;
+    margin: 2px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1600px) {
+    .box-logo .logo img {
+        width: 115px;
+        margin-bottom: 19px;
+    }
+
+    .box-logo .logo {
+        font-size: 20px;
+        line-height: 26px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .menu li a {
+        font-size: 16px;
+        line-height: 45px;
+        height: 45px;
+    }
+
+    .wrap-setup {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .icon-box,
+    .icon-sort {
+        margin: 25px 0;
+        margin-right: 15px;
+    }
+
+    .wrapper-table {
+        padding-top: 40px;
+    }
+
+    table td, table th {
+        padding: 16px;
+        padding-left: 18px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .btn-table {
+        height: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+    .wrap-setup {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .icon-box {
+        width: 38px;
+        height: 38px;
+    }
+
+    .icon-box, .icon-sort {
+        margin: 25px 0;
+        margin-right: 10px;
+    }
+
+    .icon-sort {
+        width: 38px;
+    }
     
+    .table-number {
+        min-width: 48px;
+    }
+
+    .table-name {
+        min-width: 120px;
+    }
+
+    .table-nameLat {
+        min-width: 125px;
+    }
+
+    .table-date {
+        min-width: 125px;
+        display: none;
+    }
+
+    .table-age {
+       min-width: 60px;
+    }
+
+    .table-address {
+        min-width: 130px;
+    }
+
+    .table-school {
+        display: none;
+    }
+
+    .table-phone {
+        min-width: 170px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    .wrap-setup {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .icon-box {
+        width: 32px;
+        height: 32px;
+    }
+
+    .icon-box img {
+        width: 50%;
+    }
+
+    .icon-box, .icon-sort {
+        margin: 25px 0;
+        margin-right: 6px;
+    }
+
+    .icon-sort {
+        width: 32px;
+    }
+    
+    .table-number {
+        min-width: 48px;
+    }
+
+    .table-name {
+        min-width: 120px;
+    }
+
+    .table-nameLat {
+        min-width: 125px;
+        display: none;
+    }
+
+    .table-date {
+        min-width: 125px;
+        display: none;
+    }
+
+    .table-age {
+       min-width: 60px;
+       display: none;
+    }
+
+    .table-address {
+        min-width: 130px;
+    }
+
+    .table-school {
+        display: none;
+    }
+
+    .table-phone {
+        min-width: 170px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .box-logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 25px;
+    }
+
+    .box-logo .logo {
+        width: auto;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .box-logo .logo img {
+        width: 95px;
+        margin-bottom: 0;
+        display: block;
+        height: 100%;
+        margin-right: 12px;
+    }
+
+    .left-menu {
+        min-height: auto;
+        position: relative;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+
+    .btn-menu {
+        position: absolute;
+        top: 58px;
+        right: 30px;
+        width: 25px;
+        display: block;
+    }
+
+    .btn-menu img {
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .icon-sort {
+        margin-right: 0;
+    }
+
+    .icon-box {
+        margin-right: 0;
+    }
+
+    .wrap-setup__sort {
+        justify-content: center;
+    }
+
+    .wrap-setup {
+        justify-content: center;
+    }
+
+    .wrapper-table {
+        padding-top: 40px;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .wrap-setup span {
+        display: none;
+    }
+
+    .table-address {
+        display: none;
+    }
+
+    .table-phone {
+        display: none;
+    }
 }

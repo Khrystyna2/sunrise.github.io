@@ -7,7 +7,7 @@ body {
 .left-menu {
     background: #FFE712;
     width: 100%;
-    height: auto;
+    min-height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -166,6 +166,7 @@ body {
     min-width: 50px;
     display: block;
     position: relative;
+    margin-right: 20px;
     padding-left: 20px;
     margin-bottom: 18px;
     cursor: pointer;
@@ -176,9 +177,14 @@ body {
     user-select: none;
 }
 
+.printer .label-checkbox:nth-of-type(1),
+.printer .label-checkbox:nth-of-type(4) {
+    width: 70px;
+}
+
 .printer .label-checkbox:nth-of-type(2),
 .printer .label-checkbox:nth-of-type(5) {
-    min-width: 150px;
+    width: 150px;
 }
 
 .printer .label-checkbox input {
@@ -282,6 +288,7 @@ body {
 
 .wrapper-table {
     padding-top: 58px;
+    padding-bottom: 60px;
 }
 
 table {
@@ -412,9 +419,21 @@ table tr:hover {
         height: 30px;
     }
 
+    .show-printer {
+        width: 460px;
+    }
+
+    .printer .label-checkbox, .sort-box .label-checkbox {
+        font-size: 14px;
+    }
+
+    .printer .label-checkbox:nth-of-type(2), .printer .label-checkbox:nth-of-type(5) {
+        width: 130px;
+    }
+
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1200px) {
 
     .wrap-setup {
         font-size: 12px;
@@ -436,11 +455,11 @@ table tr:hover {
     }
     
     .table-number {
-        min-width: 48px;
+        min-width: 40px;
     }
 
     .table-name {
-        min-width: 120px;
+        min-width: 110px;
     }
 
     .table-nameLat {
@@ -453,7 +472,7 @@ table tr:hover {
     }
 
     .table-age {
-       min-width: 60px;
+       min-width: 55px;
     }
 
     .table-address {
@@ -465,7 +484,23 @@ table tr:hover {
     }
 
     .table-phone {
-        min-width: 170px;
+        min-width: 220px;
+    }
+
+    .show-printer {
+        width: 350px;
+    }
+
+    .printer .label-checkbox, .sort-box .label-checkbox {
+        font-size: 12px;
+    }
+
+    .printer .label-checkbox:nth-of-type(1), .printer .label-checkbox:nth-of-type(3) ,.printer .label-checkbox:nth-of-type(5), .printer .label-checkbox:nth-of-type(7){
+        width: 130px;
+    }
+
+    .sort-box {
+        width: 238px;
     }
 
 }
@@ -530,6 +565,18 @@ table tr:hover {
         min-width: 170px;
     }
 
+    .printer .label-checkbox {
+        width: 100%;
+    }
+
+    .printer .label-checkbox:nth-of-type(1), .printer .label-checkbox:nth-of-type(3), .printer .label-checkbox:nth-of-type(5), .printer .label-checkbox:nth-of-type(7) {
+        width: 100%;
+    }
+
+    .show-printer {
+        width: 235px;
+    }
+
 }
 
 @media only screen and (max-width: 767.5px) {
@@ -558,6 +605,7 @@ table tr:hover {
     }
 
     .left-menu {
+        min-height: auto;
         position: relative;
         width: calc(100% + 30px);
         margin-left: -15px;
@@ -608,13 +656,28 @@ table tr:hover {
         min-width: 225px;
     }
 
+    .printer .label-checkbox, .sort-box .label-checkbox {
+        font-size: 14px;
+    }
+
 }
 
+@media only screen and (max-width: 680px) {
 
-@media only screen and (max-width: 500px) {
+    .menu {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 207px;
+    }
 
-    .icon-box {
+    .icon-box, .icon-sort {
+        margin: 15px 0;
         margin-right: 0;
+    }
+
+    .wrap-setup .mob-hide {
+        display: none;
     }
 
     .wrap-setup__sort {
@@ -629,15 +692,72 @@ table tr:hover {
         justify-content: center;
     }
 
-    .wrap-setup span {
-        display: none;
-    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
 
     .table-address {
         display: none;
     }
 
+}
+
+@media only screen and (max-width: 500px) {
+    .show-printer {
+        left: -88px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    .icon-box {
+        margin-right: 0;
+    }
+
+    .table-phone {
+        min-width: 185px;
+    }
+
+    .table-name {
+        min-width: 120px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .box-logo .logo img {
+        width: 80px;
+    }
+
+    .box-logo .logo {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .btn-menu {
+        top: 50px;
+    }
+
+    .menu {
+        top: 191px;
+    }
+
+    .icon-box {
+        margin-right: 0;
+    }
+
     .table-phone {
         display: none;
+    }
+
+    .table-name {
+        min-width: 150px;
+    }
+
+    .table-number {
+        max-width: 40px !important;
     }
 }

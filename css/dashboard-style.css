@@ -40,10 +40,6 @@ body {
     width: 100%;
 }
 
-.menu li {
-    
-}
-
 .menu li a {
     text-align: center;
     background-color: #FFE712;
@@ -347,9 +343,12 @@ table tr{
     -o-transition: 0.5s ease;
 }
 
-table tr:hover {
+table tr.new-person {
     background-color: #FFE8E8;
-    /* border: 1px solid #FF0008; */
+}
+
+table tr:hover {
+    background-color: #F4F4F4;
 }
 
 .table-number {
@@ -461,6 +460,10 @@ table tr:hover {
         line-height: 26px;
         padding-top: 20px;
         padding-bottom: 30px;
+    }
+
+    .menu {
+        margin-bottom: 40px;
     }
 
     .menu li a {
@@ -728,6 +731,7 @@ table tr:hover {
         position: absolute;
         z-index: 1;
         top: 225px;
+        margin-bottom: 0;
     }
 
     .icon-sort {

@@ -96,6 +96,19 @@ body {
     margin: 40px 0;
     cursor: pointer;
     margin-right: 15px;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+
+.icon-box:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .icon-sort {
@@ -103,6 +116,19 @@ body {
     margin-right: 22px;
     width: 44px;
     cursor: pointer;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+
+.icon-sort:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .icon-sort img {
@@ -372,6 +398,56 @@ table tr:hover {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+
+.btn-table:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.title-table {
+    text-align: center;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.title-table h1 {
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.icon-edit__title {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    cursor: pointer;
+    width: 25px;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+
+.icon-edit__title:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.icon-edit__title img {
+    width: 100%;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -429,6 +505,11 @@ table tr:hover {
 
     .printer .label-checkbox:nth-of-type(2), .printer .label-checkbox:nth-of-type(5) {
         width: 130px;
+    }
+
+    .title-table h1 {
+        font-size: 28px;
+        line-height: 40px;
     }
 
 }
@@ -503,6 +584,20 @@ table tr:hover {
         width: 238px;
     }
 
+    .title-table h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .icon-edit__title {
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        cursor: pointer;
+        width: 20px;
+        margin-top: -10px;
+    }
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -575,6 +670,11 @@ table tr:hover {
 
     .show-printer {
         width: 235px;
+    }
+
+    .title-table h1 {
+        font-size: 20px;
+        line-height: 26px;
     }
 
 }

@@ -14,13 +14,24 @@ $(document).ready(function() {
    });
    
    //form steps
-   $('#step1 .btn-form').click(function() {
+  $('#step1 .btn-form').click(function() {
       $('#step1').hide();
       $('#step2').show();
-   });
-   $('#step2 .btn-form').click(function() {
+  });
+
+  $('#step2 .btn-form').click(function() {
     $(' #step2').hide();
     $('#step3').show();
+  });
+
+  $('#backStep1').click(function() {
+    $(' #step2').hide();
+    $('#step1').show();
+  });
+
+  $('#backStep2').click(function() {
+    $(' #step3').hide();
+    $('#step2').show();
   });
 
   $('.arrow-down').click(function() {
